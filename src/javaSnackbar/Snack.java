@@ -20,7 +20,10 @@ public class Snack
         this.cost = cost;
         this.vendingMachineId = vendingMachineId;
     }
-    //getters
+
+    //Methods
+
+    //get
     public int getId()
     {
         return id;
@@ -42,14 +45,12 @@ public class Snack
         return vendingMachineId;
     }
 
+    //set
     public void setName(String name)
     {
         this.name = name;
     }
-    public void setQuanity(int quantity)
-    {
-        this.quantity = quantity;
-    }
+
     public void setCost(double cost)
     {
         this.cost = cost;
@@ -57,6 +58,17 @@ public class Snack
     public void setVendingMachineId(int vendingMachineId)
     {
         this.vendingMachineId = vendingMachineId;
+    }
+
+    //other methods
+    public int addQuanity(int addAmt)
+    {
+        return getQuantity() + addAmt;
+    }
+
+    public int buySnack(int removeAmt)
+    {
+        return getQuantity() - removeAmt;
     }
 
 }
