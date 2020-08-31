@@ -144,15 +144,15 @@ Total Cost: $55.00
 
 ## Instructions
 
-* [ ] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
+* [x] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
 
 ### The Objects Needed
 
 Create the classes mentioned above and then instantiate these objects from those classes
 
-* [ ] Snack
-* [ ] VendingMachine
-* [ ] Customer
+* [x] Snack
+* [x] VendingMachine
+* [x] Customer
 
 * [ ] Instantiate 2 customers
   * [ ] Jane with $45.25
