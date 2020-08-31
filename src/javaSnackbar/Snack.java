@@ -51,6 +51,11 @@ public class Snack
         this.name = name;
     }
 
+    public void setQuantity(int quantity)
+    {
+        this.quantity = quantity;
+    }
+
     public void setCost(double cost)
     {
         this.cost = cost;
@@ -66,9 +71,10 @@ public class Snack
         return getQuantity() + addAmt;
     }
 
-    public int buySnack(int removeAmt)
+    public void buySnack(int amtPurchased)
     {
-        return getQuantity() - removeAmt;
+        setQuantity(this.quantity - amtPurchased);
+
     }
 
 }

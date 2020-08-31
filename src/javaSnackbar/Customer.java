@@ -20,6 +20,7 @@ public class Customer
     }
 
         //Methods
+        //get
         public int getId()
         {
             return id;
@@ -30,10 +31,31 @@ public class Customer
             return name;
         }
     
+        public double getCashOnHand()
+        {
+            return cashOnHand;
+        }
+
+        //set
         public void setName(String name)
         {
             this.name = name;
         }
 
+        public void setCashOnHand(double cashOnHand)
+        {
+            this.cashOnHand = cashOnHand;
+        }
 
+        //other methods
+
+        public void addCash(double cashAdded)
+        {
+            setCashOnHand(this.cashOnHand + cashAdded);
+        }
+
+        public void buySnack (double cost, int amt)
+        {
+            setCashOnHand(this.cashOnHand - (cost * amt));
+        }
 }
