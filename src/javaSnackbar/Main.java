@@ -27,7 +27,39 @@ public class Main
         
         System.out.println(jane.getCashOnHand());
         System.out.println(soda.getQuantity());
+
+        jane.buySnack(pretzel.getCost(), 1);
+        pretzel.buySnack(1);
+
+        System.out.println(jane.getCashOnHand());
+        System.out.println(pretzel.getQuantity());
         
+        bob.buySnack(soda.getCost(), 2);
+        soda.buySnack(2);
+
+        System.out.println(bob.getCashOnHand());
+        System.out.println(soda.getQuantity());
+
+        jane.addCash(10);
+
+        System.out.println(jane.getCashOnHand());
+
+        jane.buySnack(chocolateBar.getCost(), 1);
+        chocolateBar.buySnack(1);
+
+        System.out.println(jane.getCashOnHand());
+        System.out.println(chocolateBar.getQuantity());
+
+        pretzel.addQuanity(12);
+
+        System.out.println(pretzel.getQuantity());
+
+        bob.buySnack(pretzel.getCost(), 3);
+        pretzel.buySnack(3);
+
+        System.out.println(bob.getCashOnHand());
+        System.out.println(pretzel.getQuantity());
+
     }   
 
     public static void main(String[] args)

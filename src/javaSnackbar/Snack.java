@@ -66,9 +66,9 @@ public class Snack
     }
 
     //other methods
-    public int addQuanity(int addAmt)
+    public void addQuanity(int addAmt)
     {
-        return getQuantity() + addAmt;
+        setQuantity(this.quantity + addAmt);
     }
 
     public void buySnack(int amtPurchased)
